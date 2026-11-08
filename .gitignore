@@ -1,0 +1,11 @@
+/out/
+/release/
+/.tools/
+/.vscode/
+/data/
+CMakeUserPresets.json
+*.user
+__pycache__/
+*.pyc
+aqtinstall.log
+*.log

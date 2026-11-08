@@ -1,0 +1,13 @@
+# Upstream ships qmake. Build the unmodified pinned sources as a private target.
+set(QSCI_ROOT "${PROJECT_SOURCE_DIR}/third_party/QScintilla_src-2.14.1")
+if(NOT EXISTS "${QSCI_ROOT}/src/Qsci/qsciscintilla.h")
+  message(FATAL_ERROR "QScintilla 2.14.1 source missing. Run scripts/dependencies.ps1.")
+endif()
+file(GLOB QSCI_QT CONFIGURE_DEPENDS "${QSCI_ROOT}/src/*.cpp" "${QSCI_ROOT}/src/Qsci/*.h")
+file(GLOB QSCI_SCINTILLA CONFIGURE_DEPENDS "${QSCI_ROOT}/scintilla/src/*.cpp" "${QSCI_ROOT}/scintilla/lexlib/*.cpp" "${QSCI_ROOT}/scintilla/lexers/*.cpp")
+add_library(portwave_qscintilla STATIC ${QSCI_QT} ${QSCI_SCINTILLA})
+target_include_directories(portwave_qscintilla PUBLIC "${QSCI_ROOT}/src" PRIVATE "${QSCI_ROOT}/scintilla/include" "${QSCI_ROOT}/scintilla/src" "${QSCI_ROOT}/scintilla/lexlib")
+target_compile_definitions(portwave_qscintilla PUBLIC QSCINTILLA_STATIC PRIVATE SCINTILLA_QT SCI_LEXER INCLUDE_DEPRECATED_FEATURES)
+target_compile_features(portwave_qscintilla PRIVATE cxx_std_17)
+target_link_libraries(portwave_qscintilla PUBLIC Qt6::Widgets Qt6::PrintSupport)
+set_target_properties(portwave_qscintilla PROPERTIES AUTOMOC ON)

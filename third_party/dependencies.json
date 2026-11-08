@@ -1,0 +1,66 @@
+{
+  "qt": {
+    "version": "6.8.3",
+    "modules": [
+      "qtbase",
+      "qtsvg",
+      "qtserialport"
+    ],
+    "source": "https://download.qt.io/archive/qt/6.8/6.8.3/submodules/",
+    "sourceArchives": [
+      {
+        "module": "qtbase",
+        "version": "6.8.3",
+        "file": "qtbase-everywhere-src-6.8.3.tar.xz",
+        "url": "https://download.qt.io/archive/qt/6.8/6.8.3/submodules/qtbase-everywhere-src-6.8.3.tar.xz",
+        "sha256": "56001b905601bb9023d399f3ba780d7fa940f3e4861e496a7c490331f49e0b80"
+      },
+      {
+        "module": "qtsvg",
+        "version": "6.8.3",
+        "file": "qtsvg-everywhere-src-6.8.3.tar.xz",
+        "url": "https://download.qt.io/archive/qt/6.8/6.8.3/submodules/qtsvg-everywhere-src-6.8.3.tar.xz",
+        "sha256": "35eb516460f00f264eb504baa253432384351cf23fb9980a5857190e8deef438"
+      },
+      {
+        "module": "qtserialport",
+        "version": "6.8.3",
+        "file": "qtserialport-everywhere-src-6.8.3.tar.xz",
+        "url": "https://download.qt.io/archive/qt/6.8/6.8.3/submodules/qtserialport-everywhere-src-6.8.3.tar.xz",
+        "sha256": "c164a0392dc7cab3d072fa8fdcacc8fc4f3e685234b021b3128020719cdf5fa5"
+      }
+    ]
+  },
+  "qscintilla": {
+    "version": "2.14.1",
+    "url": "https://www.riverbankcomputing.com/static/Downloads/QScintilla/2.14.1/QScintilla_src-2.14.1.tar.gz",
+    "sha256": "dfe13c6acc9d85dfcba76ccc8061e71a223957a6c02f3c343b30a9d43a4cdd4d",
+    "license": "GPL-3.0-only"
+  },
+  "cmake": "4.4.4",
+  "ninja": "1.13.2",
+  "aqtinstall": "3.3.0",
+  "msvc": {
+    "visualStudio": "17.14.44",
+    "compiler": "19.44.35229.0",
+    "toolset": "14.44.35207",
+    "windowsSdk": "10.0.26100.0",
+    "crt": "14.44.35112"
+  },
+  "nsis": {
+    "version": "3.11",
+    "url": "https://sourceforge.net/projects/nsis/files/NSIS%203/3.11/nsis-3.11.zip/download",
+    "mirror": "https://vie.at.distfiles.macports.org/nsis/nsis-3.11.zip",
+    "sha256": "c7d27f780ddb6cffb4730138cd1591e841f4b7edb155856901cdf5f214394fa1",
+    "license": "zlib/libpng; bzip2; CPL-1.0 (LZMA)",
+    "usage": "build tool only, portable compiler"
+  },
+  "buildToolchain": {
+    "clangTidy": "23.1.4",
+    "note": "MinGW and Zig are not part of the current build.",
+    "compiler": "MSVC v143",
+    "python": "3.12.14",
+    "clangFormat": "23.1.3",
+    "root": "C:/Program Files/PortWaveToolchain"
+  }
+}

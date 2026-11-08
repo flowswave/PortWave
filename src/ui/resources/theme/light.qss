@@ -1,0 +1,33 @@
+/* Cool light surfaces, keeping the existing widget layout and hit areas. */
+QWidget#appChrome {background:@chrome.background@;}
+QToolBar {background:@toolbar.background@;}
+QTabBar,QTabBar::tab,QWidget#logWorkspaceRow {background:@tab.background@;}
+QTabBar::tab:selected {background:@surface@;color:@text@;}
+QFrame#terminalControls,QFrame#terminalSend,QFrame#shortcutBar {background:@sender.background@;}
+QFrame#shortcutBar QScrollArea {background:@sender.background@;}
+QPlainTextEdit#sendEdit {background:@surface@;}
+QStatusBar {background:@status.background@;}
+QTreeWidget {background:@surface@;alternate-background-color:@section.background@;}
+QHeaderView::section {background:@toolbar.background@;}
+QCheckBox,QRadioButton {background:transparent;}
+QCheckBox::indicator,QRadioButton::indicator {width:18px;height:18px;background:#ffffff;border:1px solid #6b7c93;}
+QRadioButton::indicator {border-radius:10px;}
+QCheckBox::indicator:checked,QRadioButton::indicator:checked {background:@control.checkedBackground@;border-color:@control.checkedBackground@;}
+QCheckBox[fluentToggle="true"]::indicator {width:40px;height:22px;background:transparent;border:0;image:url(":/assets/switch-off-light.svg");}
+QCheckBox[fluentToggle="true"]::indicator:checked {width:40px;height:22px;background:transparent;border:0;image:url(":/assets/switch-on-light.svg");}
+QLineEdit,QComboBox,QSpinBox,QDoubleSpinBox,QFontComboBox {background:@surface@;color:@text@;selection-background-color:@selection.textBackground@;selection-color:@selection.textForeground@;}
+QTextEdit,QPlainTextEdit {selection-background-color:@selection.textBackground@;selection-color:@selection.textForeground@;}
+QTreeWidget::item:selected:active,QTreeWidget::item:selected:!active {background:@selection.background@;color:@text@;}
+QTableView {selection-background-color:@selection.background@;selection-color:@text@;}
+QPushButton[primary="true"],QPushButton#sendNow {background:@control.checkedBackground@;color:#ffffff;border:1px solid @control.checkedBackground@;}
+QPushButton[primary="true"]:disabled,QPushButton#sendNow:disabled {background:@button.disabledBackground@;color:@text.disabled@;border-color:@border@;}
+QLineEdit:focus,QComboBox:focus,QSpinBox:focus,QDoubleSpinBox:focus {border:2px solid @control.checkedBackground@;}
+QCheckBox:disabled::indicator,QRadioButton:disabled::indicator {background:@button.disabledBackground@;border-color:@border@;}
+/* Normal desktop targets, including when a saved profile uses compact controls. */
+QPushButton {min-height:22px;padding:4px 12px;}
+QDialog#logFindDialog QPushButton {min-height:22px;padding:4px 12px;}
+QToolBar QToolButton {min-width:22px;min-height:18px;padding:3px 8px;}
+QPushButton#quickCommand {min-height:18px;padding:2px 10px;}
+/* Keep the reader footer text and refresh button at the chromatic positions:
+   the light checkbox is 5px wider, so use 5px less internal label spacing. */
+QCheckBox#logAutoRefresh {spacing:1px;}

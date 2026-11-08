@@ -1,0 +1,212 @@
+/* Shared widget structure; colors and metrics are supplied by AppearanceProfile. */
+QWidget {font-family:"Microsoft YaHei UI";font-size:9pt;color:@text@;}
+QMainWindow {background:@shell@;}
+QDialog {background:@shell@;}
+QWidget#shellHeader {background:@shell@;}
+QDialog#approvedSettings {background:@surface@;border:1px solid @border.strong@;border-radius:7px;}
+QDialog#cacheSearchDialog {background:@surface@;border:1px solid @border.strong@;border-radius:7px;}
+QLabel {background:transparent;}
+QLabel[muted="true"] {color:@text.muted@;}
+QToolBar {background:@shell@;border:0;border-bottom:1px solid @border@;padding:0;spacing:6px;}
+QToolBar::separator {width:0;background:transparent;}
+QToolButton {color:@text@;background:@button.toolBackground@;border:1px solid @button.toolBorder@;border-radius:3px;padding:5px 9px;}
+QToolButton:hover {background:@surface.hover@;}
+QPushButton:hover {background:@button.hover@;border-color:@button.hoverBorder@;}
+QPushButton:pressed {background:@button.pressed@;border-color:@accent@;}
+QPushButton[primary="true"] {background:@button.primaryBackground@;border-color:@accent@;color:@button.primaryForeground@;}
+QPushButton:default {background:@button.primaryBackground@;border-color:@accent@;color:@button.primaryForeground@;}
+QPushButton:disabled {color:@text.disabled@;background:@button.disabledBackground@;border-color:@border@;}
+QLineEdit:focus {border-color:@accent@;}
+QComboBox:focus {border-color:@accent@;}
+QSpinBox:focus {border-color:@accent@;}
+QDoubleSpinBox:focus {border-color:@accent@;}
+QComboBox::drop-down {width:23px;border:0;}
+QComboBox::down-arrow {image:url(":/assets/@asset.downArrow@.svg");width:10px;height:6px;}
+QComboBox QAbstractItemView {background:@surface@;color:@text@;border:1px solid @border@;selection-background-color:@surface.active@;}
+QPlainTextEdit#sendEdit {background:@shell@;font-family:Consolas;font-size:12pt;border-radius:4px;padding:7px;}
+QFrame#terminalControls {background:@shell@;border:0;border-top:1px solid @border@;border-radius:0;}
+QFrame#terminalSend {background:@shell@;border:0;border-top:1px solid @border@;border-radius:0;}
+QFrame#shortcutBar {background:@shell@;border:0;border-top:1px solid @border@;border-radius:0;}
+QCheckBox {spacing:6px;background:transparent;padding:3px 0;}
+QRadioButton {spacing:6px;background:transparent;padding:3px 0;}
+QCheckBox::indicator {width:13px;height:13px;background:@surface.hover@;border:1px solid @check.border@;border-radius:2px;}
+QRadioButton::indicator {width:13px;height:13px;background:@surface.hover@;border:1px solid @check.border@;border-radius:7px;}
+QCheckBox::indicator:checked {background:@accent@;border-color:@accent@;image:url(":/assets/check.svg");}
+QRadioButton::indicator:checked {background:@accent@;border-color:@accent@;image:url(":/assets/radio.svg");}
+QCheckBox:disabled {color:@text.disabled@;}
+QRadioButton:disabled {color:@text.disabled@;}
+QGroupBox {background:transparent;border:1px solid @border@;border-radius:4px;margin-top:13px;padding:15px 12px 10px;}
+QGroupBox::title {subcontrol-origin:margin;left:10px;padding:0 5px;color:@text.secondary@;}
+QTabWidget::pane {border:0;background:@surface@;}
+QTabBar {background:@shell@;}
+QTabBar::tab {background:@shell@;color:@text.muted@;border:0;border-right:1px solid @border@;border-top:2px solid transparent;padding:7px 12px;min-height:20px;}
+QTabBar::tab:hover {background:@surface.active@;}
+QTabBar QToolButton {padding:0;background:@shell@;border:0;}
+QMenuBar {background:@shell@;border:0;border-bottom:1px solid @border@;}
+QMenu {background:@surface@;border:1px solid @border@;padding:5px;}
+QMenu::item {padding:6px 25px 6px 12px;}
+QMenu::item:selected {background:@accent@;color:@shell@;}
+QMenu::item:disabled {color:@text.disabled@;}
+QMenu::separator {height:1px;background:@border@;margin:4px 6px;}
+QScrollArea {background:transparent;border:0;}
+QStackedWidget {background:transparent;border:0;}
+QFrame#shortcutBar QScrollArea {background:@shell@;border:0;}
+QFrame#shortcutBar QToolButton {background:@shell@;border:1px solid @border@;padding:6px 10px;}
+QScrollBar:vertical {width:10px;background:transparent;margin:0;}
+QScrollBar:horizontal {height:10px;background:transparent;margin:0;}
+QScrollBar::handle:vertical {background:@scrollbar.thumb@;min-height:26px;border:2px solid @shell@;border-radius:4px;}
+QScrollBar::handle:horizontal {background:@scrollbar.thumb@;min-width:26px;border:2px solid @shell@;border-radius:4px;}
+QScrollBar::add-line {width:0;height:0;}
+QScrollBar::sub-line {width:0;height:0;}
+QScrollBar::add-page {background:transparent;}
+QScrollBar::sub-page {background:transparent;}
+QTreeWidget {background:@shell@;color:@text@;border:1px solid @border@;alternate-background-color:@shell@;outline:0;}
+QListWidget {background:@shell@;color:@text@;border:1px solid @border@;alternate-background-color:@shell@;outline:0;}
+QTreeView::indicator {width:13px;height:13px;background:@surface.hover@;border:1px solid @check.border@;border-radius:2px;}
+QTreeView::indicator:checked {background:@accent@;border-color:@accent@;image:url(":/assets/check.svg");}
+QTreeWidget::item {padding:6px 8px;}
+QTreeWidget::item:selected:active {background:@selection.background@;color:@text@;}
+QTreeWidget::item:selected:!active {background:@selection.background@;color:@text@;}
+QHeaderView::section {background:@surface.active@;color:@text.muted@;border:0;border-bottom:1px solid @border@;padding:8px;}
+QWidget#logStatusBar {background:@accent@;color:@shell@;border:0;border-top:1px solid @border@;min-height:30px;}
+QWidget#logStatusBar QLabel {color:@shell@;}
+QWidget#logStatusBar QCheckBox {color:@shell@;}
+QStatusBar::item {border:0;}
+QLabel#logPosition {color:@shell@;padding:0 5px;}
+QLabel#logMessage {color:@shell@;padding:0 5px;}
+QToolButton#sendPin {background:transparent;border:0;padding:1px;}
+QLineEdit#settingsSearch {margin:10px 9px 8px;}
+QPushButton[category="true"] {text-align:left;background:transparent;color:@text.muted@;border:1px solid transparent;border-radius:4px;padding:7px 9px;min-height:23px;}
+QPushButton[category="true"]:checked {background:@surface.hover@;color:@text@;border:1px solid @border@;}
+QPushButton[category="true"]:hover {background:@surface.active@;color:@text@;}
+QWidget#logCaption {background:@accent@;color:@shell@;}
+QWidget#logCaption QLabel {color:@shell@;}
+QWidget#dialogChrome {background:@shell@;border-bottom:1px solid @border@;color:@text.secondary@;}
+QWidget#dialogChrome QLabel {color:@text.secondary@;}
+QToolTip {background:@surface.hover@;color:@text@;border:1px solid @border.strong@;padding:5px;}
+QTableView {background:@shell@;color:@text@;gridline-color:@border@;selection-background-color:@selection.background@;selection-color:@text@;}
+QProgressBar {background:@surface.active@;color:@text.secondary@;border:1px solid @border.strong@;text-align:center;}
+QProgressBar::chunk {background:@accent@;}
+QTabBar::tab:selected {background:@surface@;color:@text@;border-top:2px solid @accent@;border-top-color:@accent@;}
+QPlainTextEdit {background:@surface@;color:@text@;border:1px solid @border@;selection-background-color:@selection.background@;selection-color:@text@;}
+QTextEdit {background:@surface@;color:@text@;border:1px solid @border@;selection-background-color:@selection.background@;selection-color:@text@;}
+QToolButton#chromeControl:hover {background:@surface.hover@;}
+QScrollArea#commandsScroll {border:0;background:transparent;}
+QPushButton#quickCommand {padding:2px 10px;min-height:19px;}
+QWidget#appChrome {background:@shell@;color:@text@;}
+QStatusBar {background:@shell@;color:@text@;border:0;border-top:1px solid @border@;min-height:30px;}
+QWidget#appChrome QLabel {color:@text@;}
+QStatusBar QLabel {color:@text@;}
+QToolButton#chromeControl {background:transparent;border:0;border-radius:0;padding:0;color:@text@;}
+QWidget#logWorkspaceRow {background:@shell@;}
+QToolButton#workspaceMenuButton::menu-indicator {image:none;width:0;height:0;}
+QTabBar#logWorkspaceTabs::tab:selected {background:@selection.background@;border-bottom:2px solid @accent@;}
+QTabBar#logFileTabs::tab:selected {background:@surface@;border-top:2px solid @accent@;}
+QToolButton#logTabPin {padding:0;border:0;background:transparent;}
+QToolButton#closeLogDocument {padding:0;border:0;background:transparent;}
+QToolButton#senderPin {padding:0;border:0;background:transparent;}
+QToolButton#windowPin {padding:0;border:0;background:transparent;}
+QToolButton#logTabPin:hover {background:@surface.hover@;}
+QToolButton#closeLogDocument:hover {background:@surface.hover@;}
+QToolButton#windowPin:hover {background:@surface.hover@;}
+QStatusBar#logStatusBar {background:@shell@;color:@text@;border-top:1px solid @border@;}
+QStatusBar#logStatusBar QLabel {color:@text@;}
+QStatusBar#logStatusBar QCheckBox {color:@text@;}
+QStatusBar#logStatusBar QPushButton {color:@text@;}
+QStatusBar#logStatusBar::item {border:0;}
+QWidget#terminalSend {background:@shell@;border-top:1px solid @border@;}
+QWidget#shortcutBar {background:@shell@;border-top:1px solid @border@;}
+QToolBar QToolButton {font-size:9pt;padding:5px 12px;min-height:22px;}
+QPushButton {color:@button.foreground@;background:@button.background@;border:1px solid @button.border@;border-radius:@controls.radius@px;padding:@controls.paddingY@px 12px;min-height:18px;}
+QLineEdit {background:@shell@;border:1px solid @border.strong@;border-radius:@controls.radius@px;padding:3px 9px;min-height:18px;selection-background-color:@selection.background@;selection-color:@text@;}
+QComboBox {background:@shell@;border:1px solid @border.strong@;border-radius:@controls.radius@px;padding:3px 9px;min-height:18px;selection-background-color:@selection.background@;selection-color:@text@;}
+QSpinBox {background:@shell@;border:1px solid @border.strong@;border-radius:@controls.radius@px;padding:3px 9px;min-height:18px;selection-background-color:@selection.background@;selection-color:@text@;}
+QDoubleSpinBox {background:@shell@;border:1px solid @border.strong@;border-radius:@controls.radius@px;padding:3px 9px;min-height:18px;selection-background-color:@selection.background@;selection-color:@text@;}
+QFontComboBox {background:@shell@;border:1px solid @border.strong@;border-radius:@controls.radius@px;padding:3px 9px;min-height:18px;selection-background-color:@selection.background@;selection-color:@text@;}
+QWidget#settingsSidebar {background:@shell@;border-right:1px solid @border@;border:0;}
+QWidget#settingsPage {background:@shell@;}
+QWidget#settingsSection {background:@section.background@;border:1px solid @border@;border-bottom:1px solid @border@;border-radius:6px;}
+QLabel#settingsSectionTitle {font-weight:600;color:@text@;font-size:12pt;}
+QPushButton#settingsCategory {text-align:left;padding:7px 10px;border:1px solid transparent;border-radius:@controls.radius@px;min-height:20px;}
+QPushButton#settingsCategory:checked {background:@surface.active@;border-left:3px solid @accent@;font-weight:500;}
+QWidget#settingsScope {background:@shell@;border-bottom:1px solid @border@;border:0;}
+QWidget#settingsFooter {background:@shell@;border-top:1px solid @border@;}
+QLabel#settingsGroup {color:@text.muted@;font-size:9pt;font-weight:600;padding:12px 4px 4px 4px;}
+QPushButton#connectionTypeChoice {border-radius:0;min-width:45px;}
+QPushButton#connectionTypeChoice:checked {background:@accent@;color:@button.primaryForeground@;}
+QCheckBox[fluentToggle="true"] {padding:0;spacing:0;}
+QCheckBox[fluentToggle="true"]::indicator {width:40px;height:22px;border:0;background:transparent;image:url(":/assets/switch-off.svg");}
+QCheckBox[fluentToggle="true"]::indicator:checked {image:url(":/assets/switch-on.svg");background:transparent;border:0;}
+QWidget#logReaderFooter {background:@shell@;}
+QPushButton#logManualRefresh {min-height:0;padding:0 12px;border-radius:4px;}
+QCheckBox#logAutoRefresh {padding:0;}
+QLabel#logReaderMessage {padding:0 8px;}
+QDialog#logFindDialog {background:@section.background@;border:1px solid @border@;border-radius:6px;}
+QDialog#logFindDialog QWidget#appChrome {background:transparent;border-bottom:1px solid @border@;}
+QDialog#logFindDialog QTabBar::tab {padding:6px 12px;border:0;border-bottom:2px solid transparent;}
+QDialog#logFindDialog QTabBar::tab:selected {background:transparent;border-bottom:2px solid @accent@;}
+QDialog#logFindDialog QPushButton {min-width:0;padding:7px 6px;}
+QWidget#logResultsHeader {background:@section.background@;border-top:1px solid @border@;border-bottom:1px solid @border@;min-height:28px;}
+QWidget#logResultsPanel QTreeWidget::item {padding:3px 5px;}
+QSplitter::handle {background:@shell@;width:7px;height:6px;}
+QTabBar#connectionTabs::tab {padding:@controls.tabPaddingY@px 16px;border:0;border-right:1px solid @border@;min-height:22px;border-bottom:2px solid transparent;border-radius:0;font-weight:400;}
+QLabel#settingsHeading {font-size:18pt;color:@text@;font-weight:600;}
+QTabBar#connectionTabs::tab:selected {background:@surface.active@;color:@text@;border:0;border-bottom:2px solid transparent;border-radius:0;font-weight:400;}
+QDialog#logFindDialog QCheckBox {spacing:4px;font-size:8pt;}
+QDialog#logFindDialog QRadioButton {spacing:4px;font-size:8pt;}
+QWidget#logResultsPanel QTreeWidget {font-size:8pt;}
+QTabBar#logWorkspaceTabs::tab {background:transparent;border:0;border-bottom:2px solid transparent;padding:5px 14px;min-height:16px;color:@text@;}
+QTabBar#logFileTabs::tab {background:@shell@;border:0;border-right:1px solid @border@;border-top:2px solid transparent;padding:5px 10px;min-height:18px;max-width:265px;}
+QPushButton#sendNow {background:@button.primaryBackground@;border:1px solid @accent@;color:@button.primaryForeground@;font-size:10pt;min-width:68px;padding:0;width:68px;max-width:68px;}
+QLabel#sendHint {background:@section.background@;color:@text@;border:1px solid @accent@;border-radius:@controls.radius@px;padding:2px 9px;font-size:9pt;}
+QWidget#terminalSend QComboBox {min-height:15px;padding:3px 6px;}
+QWidget#terminalSend QSpinBox {min-height:15px;padding:3px 6px;}
+QWidget#terminalSend QDoubleSpinBox {min-height:15px;padding:3px 6px;}
+QPushButton#connectionTypeChoice[choiceIndex="0"] {border-top-left-radius:5px;border-bottom-left-radius:5px;}
+QPushButton#connectionTypeChoice[choiceIndex="2"] {border-top-right-radius:5px;border-bottom-right-radius:5px;}
+QPushButton[primary="true"]:hover {border-color:@text@;}
+QPushButton#sendNow:hover {border-color:@text@;}
+QPushButton[primary="true"]:disabled {background:@button.disabledBackground@;color:@text.disabled@;border-color:@border@;}
+QPushButton#sendNow:disabled {background:@button.disabledBackground@;color:@text.disabled@;border-color:@border@;}
+
+QWidget#snapPreview {background:@preview.background@;border:3px solid @accent@;border-radius:10px;}
+
+/* Shared geometry across dark, light and chromatic. Selection is painted by ConnectionTabs. */
+QTabBar#connectionTabs::tab {background:@tab.background@;color:@text.secondary@;border:1px solid @border@;border-radius:8px;margin:4px 3px;padding:@controls.tabPaddingY@px 15px;}
+QTabBar#connectionTabs::tab:selected {background:@tab.background@;color:@text.secondary@;border:1px solid @border@;border-radius:8px;}
+QPushButton#sendNow {width:108px;min-width:108px;max-width:108px;border-radius:9px;font-size:11pt;}
+QToolButton#sendOptionsMenu,QToolButton#sendHistory {min-width:24px;max-width:24px;padding:0;}
+QWidget#settingsSidebar {background:@sidebar.background@;}
+QWidget#sendOptionsPanel {background:@shell@;}
+QToolBar QToolButton {padding:5px 10px;}
+
+QToolButton#sendOptionsMenu::menu-indicator {image:none;width:0;height:0;}
+
+QToolButton#addConnectionTab {font-size:20px;padding:0;border:1px solid @border.strong@;border-radius:6px;}
+QToolButton#dockTerminal {font-size:20px;padding:0;border:1px solid @border.strong@;border-radius:5px;}
+QToolButton#sendHistory::menu-indicator {image:none;width:0;height:0;}
+QToolButton:pressed {background:@button.pressed@;border-color:@accent@;}
+
+/* Shared Fluent-inspired numeric input: larger, contrasting pointer targets. */
+QSpinBox,QDoubleSpinBox,QDateEdit,QTimeEdit,QDateTimeEdit {padding:4px 32px 4px 9px;min-height:26px;}
+QSpinBox::up-button,QDoubleSpinBox::up-button,QDateEdit::up-button,QTimeEdit::up-button,QDateTimeEdit::up-button {subcontrol-origin:border;subcontrol-position:top right;width:28px;height:16px;margin:1px;background:@button.background@;border-left:1px solid @border.strong@;border-top-right-radius:4px;}
+QSpinBox::down-button,QDoubleSpinBox::down-button,QDateEdit::down-button,QTimeEdit::down-button,QDateTimeEdit::down-button {subcontrol-origin:border;subcontrol-position:bottom right;width:28px;height:16px;margin:1px;background:@button.background@;border-left:1px solid @border.strong@;border-bottom-right-radius:4px;}
+QSpinBox::up-arrow,QDoubleSpinBox::up-arrow,QDateEdit::up-arrow,QTimeEdit::up-arrow,QDateTimeEdit::up-arrow {image:url(":/assets/step-up-@asset.stepMode@.svg");width:14px;height:11px;}
+QSpinBox::down-arrow,QDoubleSpinBox::down-arrow,QDateEdit::down-arrow,QTimeEdit::down-arrow,QDateTimeEdit::down-arrow {image:url(":/assets/step-down-@asset.stepMode@.svg");width:14px;height:11px;}
+QSpinBox::up-arrow:disabled,QDoubleSpinBox::up-arrow:disabled,QDateEdit::up-arrow:disabled,QTimeEdit::up-arrow:disabled,QDateTimeEdit::up-arrow:disabled {image:url(":/assets/step-up-disabled.svg");}
+QSpinBox::down-arrow:disabled,QDoubleSpinBox::down-arrow:disabled,QDateEdit::down-arrow:disabled,QTimeEdit::down-arrow:disabled,QDateTimeEdit::down-arrow:disabled {image:url(":/assets/step-down-disabled.svg");}
+QSpinBox::up-button:hover,QDoubleSpinBox::up-button:hover,QSpinBox::down-button:hover,QDoubleSpinBox::down-button:hover {background:@button.hover@;}
+QSpinBox::up-button:pressed,QDoubleSpinBox::up-button:pressed,QSpinBox::down-button:pressed,QDoubleSpinBox::down-button:pressed {background:@button.pressed@;}
+QWidget#terminalSend QSpinBox,QWidget#terminalSend QDoubleSpinBox {min-height:26px;padding:4px 32px 4px 9px;}
+QComboBox::drop-down {width:28px;}
+QComboBox::down-arrow {width:14px;height:9px;}
+QToolButton#workspaceMenuButton {min-width:0;padding:0;}
+QPushButton#logOpenProgramChoice {border-radius:0;}
+QPushButton#logOpenProgramChoice:checked {background:@accent@;color:@button.primaryForeground@;}
+QPushButton#logOpenProgramChoice[choiceIndex="0"] {border-top-left-radius:5px;border-bottom-left-radius:5px;}
+QPushButton#logOpenProgramChoice[choiceIndex="1"] {border-top-right-radius:5px;border-bottom-right-radius:5px;}
+QListWidget#sendHistoryList {font-family:Consolas;font-size:12pt;border:1px solid @border.strong@;border-radius:6px;}
+QListWidget#sendHistoryList::item {padding:6px 10px;}
+QListWidget#sendHistoryList::item:hover {background:@surface.hover@;}
+QListWidget#sendHistoryList::item:selected {background:@selection.background@;color:@text@;}
+QWidget#sendHistoryPanel {background:@shell@;}

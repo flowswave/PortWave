@@ -1,0 +1,3 @@
+Checks: '-*,bugprone-*,performance-*,modernize-use-nullptr,modernize-use-override,readability-delete-null-pointer'
+HeaderFilterRegex: 'src/.*'
+WarningsAsErrors: ''

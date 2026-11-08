@@ -1,0 +1,4 @@
+#include <windows.h>
+
+// Lowest icon id: Explorer, the taskbar and shortcuts pick this one up.
+1 ICON "PortWave.ico"

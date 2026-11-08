@@ -1,0 +1,28 @@
+
+/* Chromatic: opaque navy surfaces, restrained electric-blue gradients. */
+QMainWindow,QDialog {background:@shell@;}
+QWidget#appChrome,QWidget#shellHeader {background:qlineargradient(x1:0,y1:0,x2:1,y2:1,stop:0 #142e4b,stop:0.55 #0d1d31,stop:1 #102841);}
+QWidget#appChrome QLabel {color:@text@;font-weight:600;}
+QToolBar {background:transparent;border:0;spacing:7px;}
+QToolBar QToolButton {background:transparent;border:1px solid transparent;border-radius:7px;padding:5px 10px;min-height:22px;}
+QToolBar QToolButton:hover,QToolBar QToolButton:checked {background:qlineargradient(x1:0,y1:0,x2:0,y2:1,stop:0 #174e7e,stop:1 #10385d);border:1px solid @accent@;}
+QPushButton,QToolButton {background:qlineargradient(x1:0,y1:0,x2:0,y2:1,stop:0 #1c3551,stop:1 #102137);border:1px solid @button.border@;border-radius:7px;color:@button.foreground@;}
+QPushButton:hover,QToolButton:hover {border-color:@accent@;background:@button.hover@;}
+QPushButton[primary="true"],QPushButton:default,QPushButton#sendNow,QPushButton#connectionTypeChoice:checked {background:qlineargradient(x1:0,y1:0,x2:0,y2:1,stop:0 @button.primaryBackground@,stop:1 @button.primaryEnd@);border:1px solid @accent@;color:@button.primaryForeground@;}
+QPushButton:disabled {background:@button.disabledBackground@;border-color:@border@;color:@text.disabled@;}
+QPushButton#sendNow {width:108px;min-width:108px;max-width:108px;border-radius:9px;font-size:11pt;}
+QLineEdit,QComboBox,QSpinBox,QDoubleSpinBox,QPlainTextEdit#sendEdit {background:@surface@;border:1px solid @border.strong@;border-radius:7px;}
+QPlainTextEdit#sendEdit:focus {border-color:@accent@;}
+QTabBar#connectionTabs {background:@shell@;}
+QWidget#terminalSend,QWidget#shortcutBar {background:qlineargradient(x1:0,y1:0,x2:1,y2:1,stop:0 #102238,stop:1 #091827);border-top:1px solid @border.strong@;}
+QWidget#settingsSidebar,QWidget#settingsPage,QWidget#settingsFooter {background:@shell@;}
+QWidget#settingsSection {background:@section.background@;border:1px solid @border.strong@;border-radius:9px;}
+QPushButton#settingsCategory {background:transparent;border:1px solid transparent;text-align:left;}
+QPushButton#settingsCategory:checked {background:@surface.active@;border-left:3px solid @accent@;}
+QDialog#cacheSearchDialog,QDialog#logFindDialog {background:@shell@;border:1px solid @border.strong@;border-radius:10px;}
+QTreeWidget,QListWidget {background:@surface@;border:1px solid @border.strong@;}
+QTreeWidget::item:selected {background:@selection.background@;color:@text@;}
+QStatusBar,QStatusBar#logStatusBar {background:#0c1c2d;color:@text.secondary@;border-top:1px solid @border.strong@;}
+QWidget#logResultsHeader {background:@section.background@;}
+QToolButton#chromeControl,QToolButton#windowPin,QToolButton#senderPin {background:transparent;border:0;}
+QToolButton#sendOptionsMenu,QToolButton#sendHistory {min-width:24px;max-width:24px;padding:0;}

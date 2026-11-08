@@ -1,0 +1,35 @@
+<RCC><qresource prefix="/">
+<file alias="assets/PortWave.ico">../app/PortWave.ico</file>
+<file alias="ORIGIN.md">resources/ORIGIN.md</file>
+<file alias="assets/check.svg">resources/assets/check.svg</file>
+<file alias="assets/down-dark.svg">resources/assets/down-dark.svg</file>
+<file alias="assets/down.svg">resources/assets/down.svg</file>
+<file alias="assets/radio.svg">resources/assets/radio.svg</file>
+<file alias="icons/log.svg">resources/icons/log.svg</file>
+<file alias="icons/panels.svg">resources/icons/panels.svg</file>
+<file alias="icons/plug.svg">resources/icons/plug.svg</file>
+<file alias="icons/power.svg">resources/icons/power.svg</file>
+<file alias="icons/search.svg">resources/icons/search.svg</file>
+<file alias="icons/send.svg">resources/icons/send.svg</file>
+<file alias="icons/settings.svg">resources/icons/settings.svg</file>
+<file alias="icons/sliders.svg">resources/icons/sliders.svg</file>
+<file alias="icons/waves.svg">resources/icons/waves.svg</file>
+
+
+<file alias="icons/clear.svg">resources/icons/clear.svg</file>
+<file alias="icons/refresh.svg">resources/icons/refresh.svg</file>
+<file alias="assets/switch-on.svg">resources/assets/switch-on.svg</file>
+<file alias="assets/switch-off.svg">resources/assets/switch-off.svg</file>
+<file alias="theme/widgets.qss">resources/theme/widgets.qss</file>
+<file alias="appearance/colors.json">resources/appearance/colors.json</file>
+<file alias="theme/chromatic.qss">resources/theme/chromatic.qss</file>
+<file alias="theme/light.qss">resources/theme/light.qss</file>
+<file alias="assets/switch-on-light.svg">resources/assets/switch-on-light.svg</file>
+<file alias="assets/switch-off-light.svg">resources/assets/switch-off-light.svg</file>
+<file alias="assets/step-up-dark.svg">resources/assets/step-up-dark.svg</file>
+<file alias="assets/step-down-dark.svg">resources/assets/step-down-dark.svg</file>
+<file alias="assets/step-up-light.svg">resources/assets/step-up-light.svg</file>
+<file alias="assets/step-down-light.svg">resources/assets/step-down-light.svg</file>
+<file alias="assets/step-up-disabled.svg">resources/assets/step-up-disabled.svg</file>
+<file alias="assets/step-down-disabled.svg">resources/assets/step-down-disabled.svg</file>
+</qresource></RCC>
